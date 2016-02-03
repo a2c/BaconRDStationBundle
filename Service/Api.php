@@ -110,7 +110,7 @@ class Api
         $written = fwrite($fp, $out);
         fclose($fp);
 
-        return ( $written==false ) ? false : true;
+        return ( $written === false ) ? false : true;
     }
 
     public function api($type,$method,$data)
