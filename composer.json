@@ -1,0 +1,19 @@
+{
+    "name": "baconmanager/rd-station-bundle",
+    "description": "This bundle of symfony2",
+    "keywords": ["RD Station","API","Resultados Digitais"],
+    "type": "symfony-bundle",
+    "license":      "MIT",
+    "authors": [
+        {
+            "name": "Adan Felipe Medeiros",
+            "email": "adan.grg@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/symfony": " >= 2.6"
+    },
+    "autoload": {
+        "psr-4": { "Bacon\\Bundle\\RDStationBundle\\": "" }
+    }
+}
