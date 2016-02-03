@@ -1,10 +1,10 @@
 BaconRDStationBundle
 ===============
 
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/0fcf3272ea6f41f79afc4f11bfa77854)](https://www.codacy.com/app/adan-grg/BaconCoreBundle)
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/bd38325975e34a3a9474f2479b0c6f98)](https://www.codacy.com/app/adan-grg/BaconRDStationBundle)
 [![Latest Stable Version](https://poser.pugx.org/baconmanager/core-bundle/v/stable)](https://packagist.org/packages/baconmanager/core-bundle)
 [![License](https://poser.pugx.org/baconmanager/core-bundle/license)](https://packagist.org/packages/baconmanager/core-bundle)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/798deed7-23b8-4fba-a6e6-cb018d11d008/mini.png)](https://insight.sensiolabs.com/projects/798deed7-23b8-4fba-a6e6-cb018d11d008)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/c988b49c-f887-43c8-921e-bfeed9846034/mini.png)](https://insight.sensiolabs.com/projects/c988b49c-f887-43c8-921e-bfeed9846034)
 
 Este bundle é responsável por gerar a integração com a API do RD Station
 
@@ -42,13 +42,13 @@ bacon_rd_station:
 
 ```php
 <?php
-// src\AppBundle\Controller\DefaultController.php
+// src/AppBundle/Controller/DefaultController.php
 public function rdStationAction()
 {
     $api = $this->container->get('bacon_rd_station.api');
 
     $return = $api->api('conversions','POST',array(
-        'email' => 'teste@gmail.com,
+        'email' => 'teste@gmail.com',
         'nome'  => 'Lead'
     ));
 }
