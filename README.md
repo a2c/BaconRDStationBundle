@@ -1,7 +1,7 @@
 BaconRDStationBundle
 ===============
 
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/bd38325975e34a3a9474f2479b0c6f98)](https://www.codacy.com/app/adan-grg/BaconRDStationBundle)
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/b0a2d14818ca4756897e4e9dddb36c89)](https://www.codacy.com/app/adan-grg/BaconRDStationBundle)
 [![Latest Stable Version](https://poser.pugx.org/baconmanager/core-bundle/v/stable)](https://packagist.org/packages/baconmanager/core-bundle)
 [![License](https://poser.pugx.org/baconmanager/core-bundle/license)](https://packagist.org/packages/baconmanager/core-bundle)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/c988b49c-f887-43c8-921e-bfeed9846034/mini.png)](https://insight.sensiolabs.com/projects/c988b49c-f887-43c8-921e-bfeed9846034)
