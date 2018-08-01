@@ -92,14 +92,17 @@ class Api
 
         $URLParts = parse_url($url);
 
+        $host     = $URLParts['scheme'] == 'https' ? 'ssl://'.$URLParts['host'] : $URLParts['host'];
+        $port     = $URLParts['scheme'] == 'https' ? 443 : (isset($URLParts['port']) ? $URLParts['port'] : 80);
+
         $fp = fsockopen(
-            $URLParts['host'],
-            isset( $URLParts['port'] ) ? $URLParts['port']:80,
+            $host,
+            $port,
             $errno,
             $errstr,
             30
         );
-
+        
         $out  = $method." ".$URLParts['path']." HTTP/1.1\r\n";
         $out .= "Host: ".$URLParts['host']."\r\n";
         $out .= "Content-Type: application/json\r\n";
