@@ -96,7 +96,7 @@ class Api
         $port     = $URLParts['scheme'] == 'https' ? 443 : (isset($URLParts['port']) ? $URLParts['port'] : 80);
 
         $fp = fsockopen(
-            'ssl://' . $URLParts['host'],
+            $host,
             $port,
             $errno,
             $errstr,
